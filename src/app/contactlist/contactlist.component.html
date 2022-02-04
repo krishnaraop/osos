@@ -1,0 +1,26 @@
+<div class="container">
+    <div style="display: flex;justify-content: space-around; padding: 10px;">
+         <h2 >phone numbers</h2>
+        <button class="btn btn-primary" >clear all</button>
+    </div>
+    
+  <table>
+    <thead>
+        <tr>
+            <th>  S.No     - </th>
+            <th>  Name     -  </th>
+            <th>  Mobile Number    - </th>
+            <th>  Action    </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of datas">
+            <td>{{data.id}}</td>
+            <td>{{data.name}}</td>
+            <td>{{data.mobile}}</td>
+            <td><a >Edit</a></td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+
