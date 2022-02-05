@@ -1,12 +1,12 @@
 <div class="container">   
-    <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <form >
          <div class="form-group">
             <input type="text" class="form-control" formControlName="name" required placeholder="Name"><br>
           </div>
           <div class="form-group">
             <input type="tel" class="form-control"  formControlName="mobile" required placeholder="Mobile Number">
           </div> <br>
-          <button type="submit" class="btn-primary" (click)="add()" id="submit" style="border-radius: 10px;">ADD Contact</button>
+          <button type="submit" class="btn-primary"  id="submit" style="border-radius: 10px;">ADD Contact</button>
     </form>
 </div>
 
